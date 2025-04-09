@@ -30,6 +30,7 @@ public class V1 extends JFrame implements ActionListener {
 	private JButton btnSumarDosReales;
 	private JScrollPane scrollPane;
 	private JTextArea txtS;
+	private JButton btnNewButton_1;
 
 	/**
 	 * Launch the application.
@@ -118,6 +119,10 @@ public class V1 extends JFrame implements ActionListener {
 				scrollPane.setViewportView(txtS);
 			}
 		}
+		
+		btnNewButton_1 = new JButton("Borrar");
+		btnNewButton_1.setBounds(10, 88, 85, 21);
+		contentPane.add(btnNewButton_1);
 	}
 	public void actionPerformed(ActionEvent e) {
 		if (e.getSource() == btnSumarDosReales) {
